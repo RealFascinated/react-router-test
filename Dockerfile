@@ -8,7 +8,7 @@ RUN bun install
 FROM base AS production-dependencies-env
 COPY ./package.json bun.lock /app/
 WORKDIR /app
-RUN bun install --frozen-lockfile
+RUN bun install --frozen-lockfile --no-dev
 
 FROM base AS build-env
 COPY . /app/
