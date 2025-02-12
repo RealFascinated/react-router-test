@@ -7,6 +7,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <div>Home</div>;
+export default function Test() {
+  return <div>Test</div>;
 }
